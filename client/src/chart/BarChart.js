@@ -45,24 +45,6 @@ const BarChart = () => {
       backgroundColor: 'red',
       barThickness: 12,
     },
-    // {
-    //   label: 'Store 2',
-    //   data: chart?.coins?.map((x) => x.price),
-    //   backgroundColor: 'green',
-    //   barThickness: 12,
-    // },
-    // {
-    //   label: 'Store 3',
-    //   data: chart?.coins?.map((x) => x.price),
-    //   backgroundColor: 'orange',
-    //   barThickness: 12,
-    // },
-    // {
-    //   label: 'Store 4',
-    //   data: chart?.coins?.map((x) => x.price),
-    //   backgroundColor: 'purple',
-    //   barThickness: 12,
-    // },
   ];
   return (
     <div className='App'>
