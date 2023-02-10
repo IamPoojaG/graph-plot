@@ -8,12 +8,12 @@ ChartJS.register(BarElement);
 const BarChart = () => {
   const [chart, setChart] = useState({});
   var baseUrl = 'https://api.coinranking.com/v2/coins/?limit=10';
-  var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  // var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
   var apiKey = 'coinranking4ab94fbf0d5ba26d6178ee2f48db2a4fac08db2d9dfdc496';
 
   useEffect(() => {
     const fetchStats = async () => {
-      await fetch(`${proxyUrl}${baseUrl}`, {
+      await fetch(`${baseUrl}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const BarChart = () => {
         });
     };
     fetchStats();
-  }, [baseUrl, proxyUrl, apiKey]);
+  }, [baseUrl, apiKey]);
 
   console.log('chart', chart);
 
